@@ -1,0 +1,5 @@
+# Normalize text files to LF in the repository, regardless of OS
+* text=auto
+
+# Ensure SVG files specifically use LF
+*.svg text eol=lf
