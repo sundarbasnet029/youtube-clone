@@ -1,0 +1,145 @@
+.header{
+  position:fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  z-index:100;
+}
+.header{
+  height:56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-top:0px;
+  border-width:0 0 1px 0;
+  border-style: solid;
+  border-color: hsl(0, 0%, 80%);
+}
+img{
+  height:24px;  
+}
+.left-section
+{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  margin-left:40px;
+
+}
+button{
+  border:none;
+  background-color:white;
+  height:40px;
+  width:40px;
+}
+.menu{
+  margin-right:12px;
+  display:flex;
+  justify-content: center;
+  align-items:center; 
+}
+.middle-section{
+  display:flex;
+  align-items:center;
+  flex:0.4;
+  justify-content:center;
+  background-color: ;
+}
+
+.right-section{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  margin-right:40px;
+ 
+}
+.search-bar{
+  border-width:1px;
+  border-style:solid;
+  border-radius:2px 0px  0px 2px;
+  border-color: hsl(0, 0%, 80%);
+  box-shadow: inset 1px 2px 2px hsl(0, 0%, 90%);
+  padding-left:8px;
+  height:36px;
+  flex:1;
+  width: 0px;
+}
+.search-bar::placeholder{
+  font-size:16px;
+  color:hsl(0, 0%, 60%);
+}
+.search{
+  height:40px;
+  width:60px;
+  background-color:hsl(0, 0%, 95%);
+  border-width:1px;
+  border-style:solid;
+  border-color:hsl(0, 0%, 80%);
+  margin-left: -1px;
+  border-radius: 0px 2px 2px 0px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  position:relative;
+}
+.audio{
+  background-color: hsl(0, 0%, 95%);
+  border-radius:20px;
+  margin-left:20px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.notification{
+  position:relative;
+}
+.notification p{
+  position:absolute;
+  background-color: red;
+  color:white;
+  width:20px;
+  height:20px;
+  text-align:center;
+  border-radius: 40px;
+  top:-20px;
+  right:-8px;
+  font-size:14px;
+}
+.tooltip-search{
+  position:absolute;
+  z-index: 100;
+  background-color: hsla(0, 0%, 30%,0.8);
+  top:48px;
+  padding:6px;
+  color:white;
+opacity:0;
+transition:opacity 0.5;
+pointer-events: none;
+text-wrap:nowrap;
+
+}
+.search:hover .tooltip-search{
+  opacity:1;
+}
+.audio{
+  position:relative;
+}
+.audio:hover .tooltip-audio{
+  opacity:1;
+}
+.tooltip-audio{
+  position:absolute;
+  z-index: 100;
+  background-color: hsla(0, 0%, 30%,0.8);
+  top:48px;
+  padding:6px;
+  color:white;
+opacity:0;
+transition:opacity 0.5;
+pointer-events: none;
+text-wrap:nowrap;
+
+}
